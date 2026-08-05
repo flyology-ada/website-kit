@@ -1,0 +1,10 @@
+{
+  "pageTitle": "Flyology Postgres API reference",
+  "indexDescription": "Generated public API reference for Flyology Postgres.",
+  "indexTitle": "API reference · Flyology Postgres",
+  "canonicalUrl": "https://postgres.flyology.org/api/",
+  "brandLabel": "Flyology Postgres API",
+  "navigationHtml": "<a href='../'>Overview</a><a href='../guide/'>Guide</a><a href='https://github.com/flyology-ada/flyology-postgres'>GitHub</a>",
+  "indexIntroduction": "Exact public contracts generated from Flyology Postgres source.",
+  "footerNote": "Generated with GNATdoc from selected API units."
+}

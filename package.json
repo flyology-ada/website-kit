@@ -1,0 +1,9 @@
+{
+  "name": "@flyology/website-kit",
+  "private": true,
+  "type": "module",
+  "license": "MIT OR Apache-2.0",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

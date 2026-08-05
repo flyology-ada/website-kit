@@ -1,0 +1,10 @@
+{
+  "pageTitle": "Flyology API reference",
+  "indexDescription": "Generated public API reference for Flyology.",
+  "indexTitle": "API reference · Flyology",
+  "canonicalUrl": "https://flyology.org/api/",
+  "brandLabel": "Flyology API",
+  "navigationHtml": "<a href='../'>Overview</a><a href='../guide/'>Guide</a><a href='../architecture/'>Architecture</a><a href='https://github.com/flyology-ada/flyology'>GitHub</a>",
+  "indexIntroduction": "Exact public contracts generated from Flyology source.",
+  "footerNote": "Generated with GNATdoc. Public API only."
+}
