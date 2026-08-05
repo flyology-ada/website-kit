@@ -10,7 +10,7 @@ their own repositories.
 Add the repository outside the published `website/` tree:
 
 ```sh
-git submodule add git@github.com:flyology-ada/website-kit.git vendor/website-kit
+git submodule add https://github.com/flyology-ada/website-kit.git vendor/website-kit
 ```
 
 Install the shared browser assets into a site artifact:
