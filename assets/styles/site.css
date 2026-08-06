@@ -2833,13 +2833,19 @@ code:not(pre code) {
 }
 
 .decision-row dt {
+  min-width: 0;
   color: var(--ink);
   font-weight: 600;
 }
 
 .decision-row dd {
+  min-width: 0;
   margin: 0;
   color: var(--ink-soft);
+}
+
+.decision-row dt code {
+  overflow-wrap: anywhere;
 }
 
 .architecture-figure {
