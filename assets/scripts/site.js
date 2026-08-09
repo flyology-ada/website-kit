@@ -189,7 +189,59 @@
       applyCaseFilter();
     });
 
+    const toc = document.querySelector(".toc");
+    const tocList = toc?.querySelector("ol");
+    const tocTitle = toc?.querySelector(".toc-title");
     const tocLinks = Array.from(document.querySelectorAll(".toc a[href^='#']"));
+    let tocCurrent;
+
+    if (toc && tocList && tocTitle) {
+      const compactToc = window.matchMedia("(max-width: 900px)");
+      const tocButton = document.createElement("button");
+      const listId = tocList.id || "on-this-page-links";
+      let tocOpen = false;
+
+      tocList.id = listId;
+      tocButton.className = "toc-toggle";
+      tocButton.type = "button";
+      tocButton.setAttribute("aria-controls", listId);
+      tocButton.innerHTML =
+        '<span class="toc-toggle-label">On this page</span>' +
+        '<span class="toc-toggle-current"></span>' +
+        '<svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 6 5 5 5-5"/></svg>';
+      tocCurrent = tocButton.querySelector(".toc-toggle-current");
+      tocCurrent.textContent = tocLinks[0]?.textContent.trim() || "Sections";
+      tocTitle.insertAdjacentElement("afterend", tocButton);
+      toc.dataset.collapsible = "true";
+
+      function updateTocLayout() {
+        const isCompact = compactToc.matches;
+        tocButton.hidden = !isCompact;
+        tocList.hidden = isCompact && !tocOpen;
+        tocButton.setAttribute("aria-expanded", String(isCompact && tocOpen));
+        toc.dataset.open = String(isCompact && tocOpen);
+      }
+
+      tocButton.addEventListener("click", function () {
+        tocOpen = !tocOpen;
+        updateTocLayout();
+      });
+
+      tocList.addEventListener("click", function (event) {
+        if (!compactToc.matches || !event.target.closest("a")) return;
+        tocOpen = false;
+        updateTocLayout();
+      });
+
+      if (compactToc.addEventListener) {
+        compactToc.addEventListener("change", updateTocLayout);
+      } else {
+        compactToc.addListener(updateTocLayout);
+      }
+
+      updateTocLayout();
+    }
+
     const sections = tocLinks
       .map(function (link) {
         return document.querySelector(link.getAttribute("href"));
@@ -212,6 +264,7 @@
             const active = link.getAttribute("href") === "#" + visible.target.id;
             if (active) link.setAttribute("aria-current", "true");
             else link.removeAttribute("aria-current");
+            if (active && tocCurrent) tocCurrent.textContent = link.textContent.trim();
           });
         },
         { rootMargin: "-20% 0px -65%", threshold: 0 }
