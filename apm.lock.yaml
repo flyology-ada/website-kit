@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-08-26T23:09:57.425930+00:00'
+generated_at: '2026-08-28T05:24:13.068773+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: _local/repository
@@ -15,17 +15,17 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-website-profile
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/profiles/flyology-website
   is_virtual: true
   package_type: apm_package
-  content_hash: sha256:2dd03e41acacd43abd7a3ee6237640bc114f8fa84aa4e9c7b51a8dadc59b399e
+  content_hash: sha256:8ef42c09e80aee52991ea4d40de1704e13ed2a58bc9f3c576007321c1f2c0cce
 - repo_url: flyology-ada/agents
   name: flyology-decision-authority
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/decision-authority
@@ -39,9 +39,25 @@ dependencies:
     .claude/rules/decision-authority.md: sha256:4d87fb288284c597a0dbdb06b5bc0b961d902bda0e2cf322be50b76c340d2da4
   content_hash: sha256:9d4c0515c77527d5739691aece7a5b2845b182ea2d34620ce3ddf1548c4a6d74
 - repo_url: flyology-ada/agents
+  name: flyology-grounded-communication
+  host: github.com
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
+  resolved_ref: main
+  version: 0.1.0
+  virtual_path: packages/instructions/grounded-communication
+  is_virtual: true
+  depth: 2
+  resolved_by: flyology-ada/agents
+  package_type: apm_package
+  deployed_files:
+  - .claude/rules/grounded-communication.md
+  deployed_file_hashes:
+    .claude/rules/grounded-communication.md: sha256:949f1a43613917169eacb0c0c37d661227bdff5c07b5614a4f05683a6e5be970
+  content_hash: sha256:a20d75eb6260241321a60b1f441fab5b5f4ff0c90a8254b3ced5092b7ce366f1
+- repo_url: flyology-ada/agents
   name: flyology-performance-testing
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/performance-testing
@@ -57,7 +73,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-problem-solution-commits
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/problem-solution-commits
@@ -73,7 +89,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-repository-workflow
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/repository-workflow
@@ -89,7 +105,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-review-cycle
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/review-cycle
@@ -105,7 +121,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-website-api-links
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/website-api-links
@@ -121,7 +137,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-website-journal
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/website-journal
@@ -137,7 +153,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-website-review
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/website-review
@@ -153,7 +169,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-website-submodules
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/website-submodules
@@ -169,7 +185,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-website-technical-writing
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/instructions/website-technical-writing
@@ -185,7 +201,7 @@ dependencies:
 - repo_url: flyology-ada/agents
   name: flyology-ada-skills
   host: github.com
-  resolved_commit: 6a97e7ad286a7722e6a2a6ccf782bac73fecb9e9
+  resolved_commit: 01f2dd78c0e4916327dbbf268638f6c519247710
   resolved_ref: main
   version: 0.1.0
   virtual_path: packages/skills
@@ -574,6 +590,15 @@ deployments:
   - flyology-ada/agents/packages/instructions/decision-authority
   active_owner: flyology-ada/agents/packages/instructions/decision-authority
   content_hash: sha256:4d87fb288284c597a0dbdb06b5bc0b961d902bda0e2cf322be50b76c340d2da4
+- kind: project-relative
+  target: claude
+  value: .claude/rules/grounded-communication.md
+  runtime: null
+  scope: project
+  owners:
+  - flyology-ada/agents/packages/instructions/grounded-communication
+  active_owner: flyology-ada/agents/packages/instructions/grounded-communication
+  content_hash: sha256:949f1a43613917169eacb0c0c37d661227bdff5c07b5614a4f05683a6e5be970
 - kind: project-relative
   target: claude
   value: .claude/rules/performance-testing.md
